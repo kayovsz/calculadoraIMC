@@ -52,4 +52,4 @@ if (imc < 18.5) {
     classificacao = "obesidade grau 3";
 }
 
-console.log(nome + ", seu IMC é de " + parseFloat(imc).toFixed(2) + " e é considerado " + classificacao); //junta tudo
+console.log(`${nome}, seu IMC é de ${parseFloat(imc).toFixed(2)}, e é considerado ${classificacao}`); //junta tudo
