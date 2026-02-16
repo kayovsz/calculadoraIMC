@@ -22,10 +22,10 @@ do { // comeco do loop para validar o nome, caso seja invalido, ele volta para o
 do {
     console.log("Agora, me diga sua altura em metros");
     altura = parseFloat(input());
-    if (altura <= 0 || isNaN(altura)) { //isNaN verifica se o valor não é um número
-        console.error("Erro: Altura inválida! Insira um número positivo.");
+    if (altura <= 0 || altura >= 2.5 || isNaN(altura)) { //isNaN verifica se o valor não é um número
+        console.error("Erro: Altura inválida! Insira um número válido.");
     }
-} while (altura <= 0 || isNaN(altura)); // enquanto a altura for menor ou igual a 0 ou não for um número, repete o loop
+} while (altura <= 0 || altura >= 2.5 || isNaN(altura)); // enquanto a altura for menor ou igual a 0 ou não for um número, repete o loop
 
 // validação de peso - número positivo
 do {
